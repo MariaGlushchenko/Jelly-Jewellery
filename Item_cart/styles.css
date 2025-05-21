@@ -1,0 +1,289 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #ece4db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-inform {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* Левый блок (меню) */
+.left-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-links a {
+  text-decoration: none;
+  font-family: "Times New Roman", serif;
+  font-size: 14px;
+  color: #391d16;
+}
+
+.left-links a:hover {
+  text-decoration: underline;
+}
+
+/* Центр (логотип) */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo h2 {
+  margin: 0;
+  font-family: "Tenor Sans", serif;
+  font-size: 24px;
+  color: #391d16;
+}
+
+/* Правый блок (поиск) */
+.search-bar-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.search-input {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Times New Roman", serif;
+}
+
+.search-button {
+  padding: 6px 16px;
+  font-size: 14px;
+  background-color: #fff7ee;
+  color: #391d16;
+  border: 1px solid #705149;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #e0d2c0;
+}
+
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f4f0eb;
+  color: #4f4f4f;
+  padding: 20px;
+}
+
+/* Заголовок */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f0eb;
+  border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #d0b7a3;
+}
+
+.header input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.cart img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Страница продукта */
+.product-page {
+  display: flex;
+  margin-top: 40px;
+}
+
+/* Изображения продукта */
+.product-images {
+  flex: 1;
+}
+
+.main-img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.other-images {
+  display: flex;
+  margin-top: 20px;
+}
+
+.other-images img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+/* Детали продукта */
+.product-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.product-details h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  color: #d0b7a3;
+}
+
+.product-details h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.product-details p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.size-selection select,
+.quantity input {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.add-to-cart {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #d0b7a3;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #b68f7b;
+}
+
+/* Вкладки */
+.tabs {
+  margin-top: 40px;
+}
+
+.tab-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.tab-links li {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f4f0eb;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.tab-links li.active {
+  background-color: #d0b7a3;
+  color: white;
+}
+
+.tab-links li:hover {
+  background-color: #b68f7b;
+}
+
+/* Содержимое вкладок */
+.tab-content {
+  display: none;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 8px;
+}
+
+.tab-content h3 {
+  font-family: "Playfair Display", serif;
+  color: #d0b7a3;
+  margin-bottom: 20px;
+}
+
+.tab-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Отображение активной вкладки */
+.tab-content.active {
+  display: block;
+}
+
+/* Связанные продукты */
+.related-products {
+  margin-top: 40px;
+}
+
+.related-products h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Flexbox для расположения продуктов в строку */
+.related-products {
+  display: flex; /* Используем Flexbox для горизонтального расположения */
+  flex-wrap: wrap; /* Разрешаем перенос на следующую строку, если не хватает места */
+  gap: 20px; /* Отступы между элементами */
+  justify-content: flex-start; /* Расположение элементов слева */
+}
+
+.product {
+  width: 22%; /* Примерная ширина для каждого продукта, чтобы вмещались 4 элемента в строке */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.product img {
+  width: 100%; /* Изображение будет адаптироваться под ширину блока */
+  max-width: 200px; /* Ограничение максимальной ширины изображения */
+  margin-bottom: 10px; /* Отступ снизу для изображения */
+}
+
+.product p {
+  font-size: 16px;
+  margin: 5px 0; /* Отступы сверху и снизу для текста */
+}
+
+.related-products-name {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,757 @@
+/* Section Header*/
+/* Header Section */
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #ece4db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-inform {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* Левый блок (меню) */
+.left-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-links a {
+  text-decoration: none;
+  font-family: "Times New Roman", serif;
+  font-size: 14px;
+  color: #391d16;
+}
+
+.left-links a:hover {
+  text-decoration: underline;
+}
+
+/* Центр (логотип) */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo h2 {
+  margin: 0;
+  font-family: "Tenor Sans", serif;
+  font-size: 24px;
+  color: #391d16;
+}
+
+/* Правый блок (поиск) */
+.search-bar-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.search-input {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Times New Roman", serif;
+}
+
+.search-button {
+  padding: 6px 16px;
+  font-size: 14px;
+  background-color: #fff7ee;
+  color: #391d16;
+  border: 1px solid #705149;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #e0d2c0;
+}
+/*First section main*/
+
+#main-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Make section take full screen height */
+  background-image: url("main_poster.png"); /* Ensure the image path is correct */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Poster text container styling */
+.poster-text {
+  position: absolute;
+  top: 10 px; /* Adjust this to align the text more properly */
+  left: 20 px;
+  transform: translateX(-50%); /* Center the text horizontally */
+  color: white; /* Set text color */
+  text-align: center;
+  padding: 20px;
+  max-width: 478px; /* Limit width of the text block */
+  max-height: 300px;
+  text-align: left;
+}
+.poster-text h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 45px;
+  font-style: italic;
+  margin: 0%;
+}
+.poster-text .name-of-the-collection-text {
+  font-family: Vivaldi;
+  margin-bottom: 18px;
+}
+.poster-text .p {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+.main-button {
+  padding: 12px 25px; /* Adjust padding */
+  font-size: 1.2rem; /* Slightly larger text for the button */
+  background-color: #fff7ee; /* Button color */
+  color: #705149;
+  border: 1px #705149;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/*Second section popular products*/
+
+/* Фон секции */
+#popular-products {
+  background-color: #ffffff; /* Белый фон */
+  padding-top: 60px; /* Отступ сверху от предыдущей секции */
+  padding-bottom: 42px; /* Отступ снизу до следующей секции */
+  padding-left: 100px; /* Отступ слева */
+  padding-right: 40px; /* Отступ справа */
+}
+
+/* Контейнер для заголовка и линии */
+.section-title-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Заголовок секции */
+.section-title {
+  font-size: 2.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #705149;
+  text-transform: capitalize;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Линия SVG под заголовком */
+.section-line {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+/* Контейнер для карточек товаров */
+.product-container {
+  display: flex;
+  flex-wrap: nowrap; /* Карточки будут в одной строке */
+  overflow-x: auto; /* Чтобы позволить прокручивать карточки */
+  gap: 30px;
+  padding-bottom: 10px;
+}
+
+/* Карточка товара */
+.product-item {
+  flex: 0 0 auto; /* Фиксированный размер */
+  width: 250px; /* Ширина карточки */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+/* Изображение товара */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* Детали товара */
+.product-details {
+  color: #333;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #705149;
+  margin-bottom: 10px;
+}
+
+.product-collection {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: 705149;
+  margin-bottom: 5px;
+}
+
+.product-material {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Стиль для кнопки */
+.main-button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #fff7ee;
+  color: #705149;
+  border: 1px solid #705149;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Мобильная версия: карточки становятся вертикальными */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column; /* Стекаться в колонку на мобильных устройствах */
+    align-items: center;
+  }
+  .product-item {
+    width: 90%;
+  }
+}
+
+.section-title-container {
+  display: flex; /* Включаем флексбокс */
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #705149;
+  font-style: italic;
+
+  /* Настройки фона */
+  background-image: url("element-for-sectiontwo.svg"); /* Убедитесь, что путь к изображению правильный */
+  background-size: cover; /* Растягивает изображение, заполняя весь элемент */
+  background-position: center;
+  background-repeat: no-repeat; /* Изображение не будет повторяться */
+
+  /* Размеры контейнера */
+  width: auto; /* Можно задать фиксированную ширину, например, 80% или 100% */
+  height: auto; /* Увеличьте значение для большей высоты */
+
+  /* Добавить отступы сверху и снизу (если нужно) */
+  margin-top: 24px; /* Пример отступа сверху */
+  margin-bottom: 6px; /* Пример отступа снизу */
+}
+
+/*categories */
+
+.categories-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.categories-section h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #391d16;
+  gap: 24px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+  justify-content: space-between; /* Распределяет элементы с равными промежутками */
+  gap: 20px; /* Промежутки между элементами */
+}
+
+.category-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%; /* Устанавливаем ширину элемента, чтобы на одну строку помещалось 3 элемента */
+  height: 250px; /* Устанавливаем высоту для всех элементов */
+}
+
+.category-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Сохраняем пропорции изображения */
+}
+
+.category-text {
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+/*Section customized products*/
+
+/* Секция с фоном */
+#customized-products {
+  position: relative;
+  width: 100%;
+  height: 432px; /* Make section take full screen height */
+  background-image: url("Custom_img.png"); /* Ensure the image path is correct */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Заголовок секции */
+.section-custom-title {
+  font-size: 48px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Описание секции */
+.section-description {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  max-width: 570px;
+  line-height: 200%;
+}
+
+/* Кнопка */
+.form-button {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #fff7ee;
+  color: #391d16;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #e0b800; /* Изменение цвета на hover */
+}
+
+/*Section about project*/
+
+/* Стиль секции */
+#about-project {
+  padding: 60px 24px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+/* Заголовок секции */
+.section-title {
+  font-size: 2.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #705149;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Описание секции */
+.section-description {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Сетка для изображений */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки для изображений */
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px; /* Устанавливаем фиксированную высоту */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Текст с описанием */
+.section-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Заголовок для бренда */
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #705149;
+}
+
+/* Мобильная версия (2 колонки для изображений) */
+@media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Мобильная версия (1 колонка для изображений) */
+@media (max-width: 480px) {
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Section about us*/
+
+#about-project-section {
+  display: flex;
+  justify-content: center;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+/* Дополнительные стили для изображения */
+.project-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-description-container {
+  max-width: auto; /* Ограничиваем ширину текста */
+}
+
+/* Заголовок */
+.Aboutus_header {
+  font-family: "Vivaldi", serif;
+  font-size: 48px;
+  font-style: italic;
+  color: #391d16;
+  margin-bottom: 50px;
+}
+
+/* Обычный текст */
+.Aboutus_text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  max-width: 650px;
+}
+
+/* Выделенный текст */
+.Aboutus_bolttext {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Контейнер для изображений на новой строке */
+.linetwo-photo-container {
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем элементам переноситься на следующую строку */
+  gap: 20px; /* Промежуток между изображениями */
+  margin-top: 20px; /* Отступ сверху, чтобы изображения не прилипали к тексту */
+  box-sizing: border-box; /* Чтобы padding и border учитывались в общей ширине */
+  overflow: hidden; /* Скрываем все, что выходит за пределы контейнера */
+}
+
+/* third part*/
+
+.Aboutus_text-second {
+  max-width: 800px;
+}
+
+.image-text-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.aboutus-section-secondttext {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+/*Section Valuse*/
+
+.values-section {
+  padding: 60px 10%; /* Добавляем отступы с обеих сторон для лучшего выравнивания */
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.section-title-values {
+  font-family: "Vivaldi", serif;
+  font-size: 48px;
+  font-style: italic;
+  color: #391d16;
+  margin-bottom: 50px;
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap; /* Блоки будут перебираться на новую строку при необходимости */
+}
+
+.value-item {
+  background-color: #fff; /* Белый фон */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень для блока */
+  width: 30%; /* Устанавливаем ширину блока */
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Добавляем плавный переход */
+}
+
+.value-item:hover {
+  transform: translateY(-10px); /* Эффект при наведении */
+}
+
+.value-item h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  color: #391d16;
+  margin-bottom: 20px;
+}
+
+.value-item p {
+  font-family: "Times New Roman", Times, serif;
+  color: #391d16;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*Reviw section*/
+.reviews-section {
+  padding: 60px 10%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.section-title-review {
+  font-size: 48px;
+  font-style: italic;
+  color: #391d16;
+  margin-bottom: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.review-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.review-item:hover {
+  transform: translateY(-10px);
+}
+
+.review-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.review-content h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: #391d16;
+  margin-bottom: 10px;
+}
+
+.review-date {
+  font-family: "Times New Roman", Times, serif;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.review-text {
+  font-family: "Times New Roman", Times, serif;
+  color: #391d16;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*Footer section*/
+
+.footer {
+  background-color: #391d16; /* Темный цвет фона футера */
+  color: #fff; /* Белый текст */
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 200px; /* Устанавливаем минимальную ширину для каждого блока */
+}
+
+.footer-left p,
+.footer-center p,
+.footer-right p {
+  margin: 10px 0;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin: 10px 0;
+}
+
+.footer-center a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-center a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.customForm-overlay {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.customForm-overlay.active {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.customForm-modal {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  height: 80vh;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.customForm-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.customForm-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.search-bar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

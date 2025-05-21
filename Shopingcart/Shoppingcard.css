@@ -1,0 +1,240 @@
+/* Общие стили */
+/* Хедер */
+.jelli-header {
+  background-color: #f4f0eb;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.jelli-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Логотип */
+.jelli-logo a {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #d0b7a3; /* Теплый бежевый для логотипа */
+  text-decoration: none;
+}
+
+/* Меню */
+.jelli-header-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.jelli-category-dropdown,
+.jelli-currency-dropdown {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.jelli-search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.jelli-search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.jelli-search-btn {
+  position: absolute;
+  right: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.jelli-search-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Иконки пользователя и корзины */
+.jelli-header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.jelli-user-icon img,
+.jelli-cart-icon img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f9f4f0; /* Легкий бежевый фон */
+  color: #4f4f4f;
+  padding: 20px;
+}
+
+/* Заголовок */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f0eb;
+  border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #d0b7a3; /* Теплый бежевый для логотипа */
+}
+
+.header input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.cart img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Страница оформления заказа */
+.checkout-page {
+  margin-top: 40px;
+}
+
+.checkout-page h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: #d0b7a3; /* Основной цвет */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Контейнер для деталей заказа */
+.checkout-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.customer-info,
+.order-summary {
+  width: 48%;
+}
+
+.customer-info h2,
+.order-summary h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #d0b7a3;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #4f4f4f;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input,
+form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+button.place-order {
+  padding: 12px 20px;
+  background-color: #d0b7a3;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.place-order:hover {
+  background-color: #b68f7b;
+  transform: scale(1.05); /* Эффект увеличения при наведении */
+}
+
+/* Стиль для вариантов доставки */
+.delivery-options h3,
+.payment-method h3 {
+  font-size: 20px;
+  color: #d0b7a3;
+  margin-top: 20px;
+}
+
+.radio-group label {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Стиль для сводки заказа */
+.order-item p,
+.total p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.total {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Сводка итоговой суммы */
+.total p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Футер */
+.footer {
+  margin-top: 40px;
+  background-color: #d0b7a3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-info {
+  font-size: 14px;
+}

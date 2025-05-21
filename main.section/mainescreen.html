@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+<!-- Header (тот же, что и в других страницах) -->
+  <header class="header">
+    <div class="header-inform">
+      <div class="left-links">
+        <a href="All_items/All_items.html">All products</a>
+        <a href="#">ERU</a>
+      </div>
+      <div class="logo">
+        <a href="/main.section/mainescreen.html"><h2>Jelli Jewelry</h2></a>
+      </div>
+      <div class="search-bar-container">
+        <input type="text" class="search-input" placeholder="Search products..." />
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+  </header>
+    
+    <!-- Main Section -->
+<section id="main-section">
+  <div class="poster-text">
+    <h6>
+      Collection <br />
+      <span class="name-of-the-collection-text">“Wings of Freedom”</span>
+    </h6>
+    <p>
+      This is a good opportunity to please a loved one. She will 100% get
+      exactly what she dreamed of.
+    </p>
+    <div>
+      <a href="wings_of_freedom/wings-of-freedom.html">
+        <button class="main-button">More details</button>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Popular Products Section -->
+    <section id="popular-products">
+      <div class="section-title-container">
+        <h2 class="section-title">Popular products</h2>
+      </div>
+
+      <div class="product-container">
+        <!-- Product Item 1 -->
+        <div class="product-item">
+          <img
+            src="/popular_product_img/BraceletGoldPlanet.png"
+            alt="Product 1"
+            class="product-image"
+          />
+          <div class="product-details">
+            <h3 class="product-title">Bracelet "Gold Planet"</h3>
+            <p class="product-collection">Collection: "Autumn Charm"</p>
+            <p class="product-price">₴ 11,200</p>
+            <p class="product-material">(Yellow gold)</p>
+            <button class="main-button">Buy</button>
+          </div>
+        </div>
+        <!-- Product Item 2 -->
+        <div class="product-item">
+          <img
+            src="/popular_product_img/EarringsStefania.png"
+            alt="Product 2"
+            class="product-image"
+          />
+          <div class="product-details">
+            <h3 class="product-title">Earrings "Stefania"</h3>
+            <p class="product-collection">Collection: "Wings of Freedom"</p>
+            <p class="product-price">₴ 5,600</p>
+            <p class="product-material">(Silver)</p>
+             <button class="main-button">Buy</button>
+          </div>
+        </div>
+        <!-- Product Item 3 -->
+        <div class="product-item">
+          <img
+            src="/popular_product_img/NecklaceUnity.png"
+            alt="Product 3"
+            class="product-image"
+          />
+          <div class="product-details">
+            <h3 class="product-title">Necklace "Unity"</h3>
+            <p class="product-collection">Collection: "Wings of Freedom"</p>
+            <p class="product-price">₴ 32,500</p>
+            <p class="product-material">(Silver)</p>
+             <button class="main-button">Buy</button>
+          </div>
+        </div>
+        <!-- Product Item 4 -->
+        <div class="product-item">
+          <img
+            src="/popular_product_img/NecklaceNightLove.png"
+            alt="Product 4"
+            class="product-image"
+          />
+          <div class="product-details">
+            <h3 class="product-title">Necklace "Night Love"</h3>
+            <p class="product-collection">Collection: "True Love"</p>
+            <p class="product-price">₴ 10,750</p>
+            <p class="product-material">(Red gold)</p>
+             <button class="main-button">Buy</button>
+          </div>
+        </div>
+        <!-- Product Item 5 -->
+        <div class="product-item">
+          <img
+            src="/popular_product_img/EarringsImprint.png"
+            alt="Product 5"
+            class="product-image"
+          />
+          <div class="product-details">
+            <h3 class="product-title">Earrings "Imprint"</h3>
+            <p class="product-collection">Collection: "Autumn Charm"</p>
+            <p class="product-price">₴ 12,750</p>
+            <p class="product-material">(Yellow gold)</p>
+             <button class="main-button">Buy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+      <h2>Categories</h2>
+      <div class="categories-container">
+        <div class="category-item">
+          <img src="Section3/Rings.png" alt="Rings" />
+        </div>
+        <div class="category-item">
+          <img src="Section3/Pedants.png" alt="Pendants" />
+        </div>
+        <div class="category-item">
+          <img src="Section3/Ear cuffs.png" alt="Ear cuffs" />
+        </div>
+        <div class="category-item">
+          <img src="Section3/Earrinds.png" alt="Earrinds" />
+        </div>
+        <div class="category-item">
+          <img src="Section3/Bracelets.png" alt="Bracelets" />
+        </div>
+        <div class="category-item">
+          <img src="Section3/Neckless.png" alt="Necklaces" />
+        </div>
+      </div>
+    </section>
+
+   <!-- Customized Products Section -->
+<section id="customized-products">
+  <div class="customized-content">
+    <div class="text-container">
+      <h2 class="section-custom-title">Customized products</h2>
+      <p class="section-description">
+        We are always interested in new ideas and new visions of jewelry. We
+        will gladly take on the most creative idea and try to bring it to life.
+      </p>
+      <!-- Кнопка открытия формы -->
+      <button onclick="customForm_openModal()">Fill out the form</button>
+
+    </div>
+  </div>
+</section>
+
+    <!-- About Us Section -->
+    <section id="about-project-section">
+      <div class="aboutus-section-firsttext">
+        <div class="image-text">
+          <img
+            src="About_project/First_img_drawing.png"
+            alt="Project Image 1"
+            class="project-image"
+          />
+          <div class="section-description-container">
+            <div class="Aboutus_header"><p>About us</p></div>
+            <p class="Aboutus_text">
+              We are a Ukrainian jewelry manufacturer. Jewelry is made by hand
+              in Kyiv, but we are carried all over the world. We mainly work
+              with recycled silver and gold, we apply the principles of lean
+              production. All our jewelry is first drawn by our designers, and
+              then made by craftsmen.
+            </p>
+            <p class="Aboutus_bolttext">
+              You won't find jewelry like the ones in our store anywhere else.
+            </p>
+            </div>
+            </div>
+            <!-- Контейнер для изображений, который будет располагать их в линию -->
+      <div class="linetwo-photo-container">
+        <img src="/main.section/About_project/Second_Ring.png" alt="" class="line-photo">
+        <img src="/main.section/About_project/Three_jewellery.png" alt="" class="line-photo">
+        <img src="/main.section/About_project/Four_img_making.png" alt="" class="line-photo">
+        <img src="/main.section/About_project/Five_img.png" alt="" class="line-photo">
+      </div>
+
+
+      <div class="aboutus-section-secondttext">
+        <div class="Aboutus_text-second">
+       <p >Each piece is crafted with inspiration by a specific jeweler: from scratch to finished product. We love what we do, and we approach our work responsibly and ethically. Focusing on our customers, our products highlight the best inside and out. <br>
+
+Usually, the workshop works on pre-orders, but a certain number of pieces are in stock.</p>
+    <p class="Aboutus_bolttext">
+      Our brand is about sophistication and audacity.
+    </p>
+    </div>  
+       <div class="image-text-2">
+          <img
+            src="About_project/Six_img.png"
+            alt="Project Image 1"
+            class="project-image"
+          />  
+     </div>
+     </div>
+    </section>
+
+    <!-- Values Section -->
+    <section>
+      <div class="values-section">
+        <h2 class="section-title-values">Values</h2>
+        <div class="values-container">
+          <div class="value-item">
+            <h3>Nature</h3>
+            <p>
+              We strive to package our parcels in an environmentally friendly
+              way. While we can't completely give up all the beauty of
+              packaging, as we believe it plays a crucial role in the gift and
+              the gifting process, we do our best to use paper and cardboard
+              that can be recycled.
+            </p>
+          </div>
+          <div class="value-item">
+            <h3>Uniqueness</h3>
+            <p>
+              The natural desire for uniqueness, something special and not
+              mass-produced, has brought us all here. All the jewelry is
+              exclusive because it is impossible to create two identical pieces.
+              They are similar, but they differ.
+            </p>
+          </div>
+          <div class="value-item">
+            <h3>People</h3>
+            <p>
+              We understand when someone asks about a hundred different pieces
+              of jewelry or places an order only after a month. This is
+              completely normal and not irritating at all.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <div class="reviews-section" id="reviews-section">
+      <h2 class="section-title-review">Reviews</h2>
+      <div class="reviews-container">
+        <div class="review-item">
+          <img src="/main.section/reviews/OksanaPopova.png" alt="Oksana Popova" class="review-avatar" />
+          <div class="review-content">
+            <h3>Oksana Popova</h3>
+            <p class="review-date">25 days ago</p>
+            <p class="review-text">
+              I wanted to thank you for the ring – it is incredibly beautiful
+              and fits my finger perfectly! Now I want to wear it every day!
+            </p>
+          </div>
+        </div>
+        <div class="review-item">
+          <img
+            src="/main.section/reviews/KseniaChenovtseva.png"
+            alt="Ksenia Chenovtseva"
+            class="review-avatar"
+          />
+          <div class="review-content">
+            <h3>Ksenia Chenovtseva</h3>
+            <p class="review-date">100 days ago</p>
+            <p class="review-text">
+              Jelly Jewelry has a very professional team! I received the
+              earrings (from the new collection) yesterday! Delightful! And what
+              a stylish and touching packaging! Thank you for your work, filled
+              with love!
+            </p>
+          </div>
+        </div>
+        <div class="review-item">
+          <img src="/main.section/reviews/OlhaNichyk.png" alt="Olha Nichyk" class="review-avatar" />
+          <div class="review-content">
+            <h3>Olha Nichyk</h3>
+            <p class="review-date">1 year ago</p>
+            <p class="review-text">
+              This is my favorite brand ❤️ I already have a small collection of
+              their products, and all of them are made perfectly. Moreover,
+              today I received a custom order, and it is soooo beautiful. The
+              artisan took all my wishes and details into account, and I am very
+              satisfied!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <p><strong>Contact information:</strong></p>
+          <p>+38050664400</p>
+          <p>Jelli0jewelry@gmail.com</p>
+        </div>
+        <div class="footer-center">
+          <ul>
+            <li><a href="#reviews-section">Reviews</a></li>
+            <li><a href="#about-project-section">About us</a></li>
+            <li><a href="#customized-products">Castom</a></li>
+            <li><a href="#">Certificates</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p><strong>Showroom:</strong></p>
+          <p>Mn-Fr 11:00-18:00</p>
+          <p>Ivan Franko street 44</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Jelli Jewelry</p>
+        <p>Kyiv, 2022</p>
+      </div>
+    </footer>
+    <div class="customForm-overlay" id="customFormOverlay">
+    <div class="customForm-modal">
+      <button class="customForm-close-btn" onclick="customForm_closeModal()">×</button>
+      <iframe src="form.individual/form.html" class="customForm-iframe"></iframe>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

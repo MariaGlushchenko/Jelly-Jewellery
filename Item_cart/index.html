@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jelli Jewelry - Product</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inform">
+        <div class="left-links">
+          <a href="all-products.html">All products</a>
+          <a href="#">ERU</a>
+        </div>
+        <div class="logo">
+          <a href="/main.section/mainescreen.html"><h2>Jelli Jewelry</h2></a>
+        </div>
+        <div class="search-bar-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search products..."
+          />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Иконки пользователя и корзины -->
+    <div class="product-page">
+      <div class="product-images">
+        <img
+          src="/Item_cart/Item.card.png"
+          alt="Nadiya Earrings"
+          class="main-img"
+        />
+      </div>
+
+      <div class="product-details">
+        <h1>“Nadiya” Earrings</h1>
+        <h2>SKU: "Wings of Freedom"</h2>
+        <p>Material: 18k gold</p>
+        <p>Price: 10750 UAH</p>
+        <div class="size-selection">
+          <label for="size">Size:</label>
+          <select id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="quantity">
+          <label for="quantity">Quantity:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            value="1"
+            min="1"
+          />
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Вкладки с динамическим контентом -->
+    <div class="tabs">
+      <ul class="tab-links">
+        <li class="active" data-tab="description">Product Description</li>
+        <li data-tab="manufacturing">Manufacturing Terms</li>
+        <li data-tab="delivery">Delivery</li>
+        <li data-tab="size-guide">How to Choose the Right Size</li>
+      </ul>
+      <div class="tab-content" id="description">
+        <h3>Product Description</h3>
+        <p>Size: 6 mm</p>
+        <p>
+          Made from gold (black, yellow, and white) and in a combined technique.
+        </p>
+        <p>Handmade and unique design. Manufactured in Ukraine.</p>
+        <p>
+          Each piece is individually crafted, and we pay attention to the
+          smallest details to create one-of-a-kind jewelry.
+        </p>
+      </div>
+      <div class="tab-content" id="manufacturing">
+        <h3>Manufacturing Terms</h3>
+        <p>
+          The typical manufacturing time is 5-7 working days. We carefully craft
+          each item to ensure it is a unique piece of art.
+        </p>
+        <p>
+          We use high-quality materials and advanced technology to guarantee the
+          best results. Each piece is inspected for perfection before it is
+          shipped.
+        </p>
+      </div>
+      <div class="tab-content" id="delivery">
+        <h3>Delivery</h3>
+        <p>
+          We offer free shipping for orders within Ukraine. The delivery time is
+          typically 2-5 working days.
+        </p>
+        <p>
+          We use reliable delivery services to ensure that your jewelry reaches
+          you safely. International shipping options are available upon request.
+        </p>
+      </div>
+      <div class="tab-content" id="size-guide">
+        <h3>How to Choose the Right Size</h3>
+        <p>
+          To determine the correct size, please refer to our size guide or
+          contact us for assistance. We recommend measuring your finger, wrist,
+          or neck to ensure a perfect fit for rings, bracelets, or necklaces.
+        </p>
+        <p>
+          If you're unsure about your size, feel free to reach out to our
+          customer support team, and we'll guide you through the process.
+        </p>
+      </div>
+    </div>
+
+    <div class="related-products-name">
+      <h3>Related Products</h3>
+    </div>
+    <div class="related-products">
+      <div class="product">
+        <img src="/Item_cart/Adding_items.png" alt="Gold Bracelet" />
+        <p>Gold Bracelet</p>
+        <p>Price: 2800 UAH</p>
+      </div>
+      <div class="product">
+        <img src="/Item_cart/Adding_items.png" alt="Drop Earrings" />
+        <p>Drop Earrings</p>
+        <p>Price: 3800 UAH</p>
+      </div>
+      <div class="product">
+        <img src="/Item_cart/Adding_items.png" alt="Rain Drop Earrings" />
+        <p>Rain Drop Earrings</p>
+        <p>Price: 3900 UAH</p>
+      </div>
+      <div class="product">
+        <img src="/Item_cart/Adding_items.png" alt="Imprint Earrings" />
+        <p>Imprint Earrings</p>
+        <p>Price: 12750 UAH</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

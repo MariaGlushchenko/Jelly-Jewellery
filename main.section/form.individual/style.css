@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #fff;
+  color: #333;
+}
+
+.custom-form-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ffecd1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #ffe0b3;
+}
+
+#formSuccessMessage {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+#formSuccessMessage {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f0fff0;
+  border: 1px solid #c3e6cb;
+  border-radius: 10px;
+  color: #155724;
+  font-size: 16px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

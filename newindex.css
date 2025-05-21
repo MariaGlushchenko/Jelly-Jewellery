@@ -1,0 +1,398 @@
+/* === BASE STYLES === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === HEADER === */
+.header-inform {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #ece4db;
+  flex-wrap: wrap;
+}
+
+.left-links {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  text-align: center;
+  flex: 1;
+}
+
+.search-bar-container {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  padding: 6px 16px;
+  background-color: #fff7ee;
+  border: 1px solid #705149;
+  color: #391d16;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #e0d2c0;
+}
+
+/* === MAIN POSTER === */
+#main-section {
+  background-image: url("main_poster.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  color: white;
+  max-width: 500px;
+  text-align: left;
+}
+
+.poster-text h6 {
+  font-size: 36px;
+  font-style: italic;
+}
+
+.name-of-the-collection-text {
+  font-family: Vivaldi;
+}
+
+.main-button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #fff7ee;
+  color: #705149;
+  border: 1px solid #705149;
+  cursor: pointer;
+}
+
+/* === PRODUCT SECTION === */
+#popular-products {
+  background-color: #fff;
+  padding: 60px 40px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-style: italic;
+  color: #705149;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-item {
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* === CATEGORIES === */
+.categories-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-item {
+  width: 30%;
+  height: 200px;
+}
+
+.category-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* === CUSTOMIZED PRODUCTS === */
+
+#customized-products {
+  background-image: url("Custom_img.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+.section-custom-title {
+  font-size: 36px;
+  font-style: italic;
+}
+
+.form-button {
+  padding: 12px 25px;
+  background-color: #fff7ee;
+  color: #391d16;
+  border: none;
+  cursor: pointer;
+}
+
+/* === VALUES === */
+.values-section {
+  padding: 40px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.value-item {
+  background-color: white;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === REVIEWS === */
+.reviews-section {
+  padding: 40px;
+  background-color: #f7f7f7;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.review-item {
+  background-color: white;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: #391d16;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+/* === RESPONSIVE ADAPTATION === */
+@media (max-width: 1024px) {
+  .header-inform {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-bar-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .poster-text {
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .product-item,
+  .category-item,
+  .value-item,
+  .review-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item,
+  .category-item,
+  .value-item,
+  .review-item {
+    width: 90%;
+  }
+}
+
+/* ===== МОДАЛЬНОЕ ОКНО ===== */
+.customForm-overlay {
+  display: none; /* скрыто по умолчанию */
+  opacity: 0; /* прозрачность для анимации */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* не кликается в скрытом виде */
+}
+
+.customForm-overlay.active {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ===== ВНУТРЕННИЙ КОНТЕЙНЕР МОДАЛКИ ===== */
+.customForm-modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* ===== ЗАКРЫТЬ (КРЕСТИК) ===== */
+.customForm-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ===== СОДЕРЖИМОЕ ФОРМЫ ===== */
+.customForm-modal h2 {
+  margin-top: 0;
+}
+
+.customForm-modal label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.customForm-modal input,
+.customForm-modal textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.customForm-modal button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffecd1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.customForm-modal button[type="submit"]:hover {
+  background-color: #ffe0b3;
+}
+
+/* ===== КНОПКА ОТКРЫТИЯ ===== */
+.customForm-open-btn {
+  padding: 12px 24px;
+  background-color: #fff0e5;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.customForm-open-btn:hover {
+  background-color: #ffe0cc;
+}
